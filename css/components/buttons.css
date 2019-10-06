@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../assets/fonts/futurademic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../assets/fonts/futurademic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../assets/fonts/yesevaone.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../assets/fonts/futuramediumc.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.call-request {
+  margin: 0;
+  padding: 0;
+  background-color: #E3B873;
+  border: none;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  padding: 13px 33px;
+  margin-right: 6%;
+}
+.call-request span {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.call-request:hover {
+  background-color: #dba249;
+}
+.call-request:active {
+  background-color: #c88b28;
+}
+@media screen and (max-device-width: 375px) {
+  .call-request {
+    display: none;
+  }
+}
+
+.calculate-cost {
+  margin: 0;
+  padding: 0;
+  margin-right: 1%;
+  background-color: #E3B873;
+  border: none;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px;
+  padding: 19px 42px 20px 41px;
+}
+.calculate-cost:hover {
+  background-color: #dba249;
+}
+.calculate-cost:active {
+  background-color: #c88b28;
+}
+@media screen and (max-device-width: 375px) {
+  .calculate-cost {
+    width: 95%;
+  }
+}
+
+.submit-application {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px;
+  padding: 19px 42px 20px 41px;
+}
+.submit-application:hover {
+  border-color: #dba249;
+  color: #dba249;
+}
+.submit-application:active {
+  border-color: #c88b28;
+  color: #c88b28;
+}
+@media screen and (max-device-width: 375px) {
+  .submit-application {
+    width: 95%;
+    margin-top: 5%;
+  }
+}
+
+.scroll-down__button {
+  width: 29px;
+  height: 29px;
+  border: 1.5px solid #E3B873;
+  background-color: transparent;
+  border-radius: 100%;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+.scroll-down__button:hover {
+  border-color: #dba249;
+}
+.scroll-down__button:active {
+  border-color: #c88b28;
+}
+
+.swipe-left {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.swipe-left__mobile {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  background-color: #E3B873;
+  border: none;
+  border-radius: 100%;
+  transform: rotate(180deg);
+}
+
+.swipe-right__mobile {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background-color: #E3B873;
+  border: none;
+  border-radius: 100%;
+}
+
+.camera-control__video__button {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 85px;
+  height: 85px;
+  background-color: #E3B873;
+  border: none;
+  border-radius: 100%;
+}
+
+.camera-control__form__submit {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background-color: #E3B873;
+}
+.camera-control__form__submit:hover {
+  background-color: #dba249;
+}
+.camera-control__form__submit:active {
+  background-color: #c88b28;
+}
+@media screen and (max-device-width: 375px) {
+  .camera-control__form__submit {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=buttons.css.map */

@@ -1,0 +1,17 @@
+$maxWidth: 1438px;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.center-content {
+  width: 100%;
+  max-width: $maxWidth;
+
+  margin: 0 auto;
+
+  @media screen and (max-device-width: 375px) {
+    max-width: 375px;
+  }
+}

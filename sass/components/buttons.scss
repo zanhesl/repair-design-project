@@ -1,0 +1,171 @@
+@import "../abstracts/fonts";
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.call-request {
+  @include zeroPaddings;
+  background-color: $colorBiege;
+  border: none;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  //Only for visuals
+  padding: 13px 33px;
+  margin-right: 6%;
+
+  & span {
+    font-family: $fontFamilyFuturaC;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
+  @media screen and (max-device-width: 375px) {
+    display: none;
+  }
+}
+
+.calculate-cost {
+  @include zeroPaddings;
+  margin-right: 1%;
+  background-color: $colorBiege;
+  border: none;
+  font-family: $fontFamilyFuturaC;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px;
+  padding: 19px 42px 20px 41px;
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
+  @media screen and (max-device-width: 375px) {
+    width: 95%;
+  }
+}
+
+.submit-application {
+  @include zeroPaddings;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: $fontFamilyFuturaC;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px;
+  padding: 19px 42px 20px 41px;
+
+  &:hover {
+    border-color: darken($colorBiege, 10%);
+    color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    border-color: darken($colorBiege, 20%);
+    color: darken($colorBiege, 20%);
+  }
+  @media screen and (max-device-width: 375px) {
+    width: 95%;
+    margin-top: 5%;
+  }
+}
+
+.scroll-down__button {
+  width: 29px;
+  height: 29px;
+  border: 1.5px solid $colorBiege;
+  background-color: transparent;
+  border-radius: 100%;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+
+  &:hover {
+    border-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    border-color: darken($colorBiege, 20%);
+  }
+}
+
+.swipe-left {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.swipe-left__mobile {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  background-color: $colorBiege;
+  border: none;
+  border-radius: 100%;
+  transform: rotate(180deg);
+}
+
+.swipe-right__mobile {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background-color: $colorBiege;
+  border: none;
+  border-radius: 100%;
+}
+
+.camera-control__video__button {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 85px;
+  height: 85px;
+  background-color: $colorBiege;
+  border: none;
+  border-radius: 100%;
+}
+
+.camera-control__form__submit {
+  font-family: $fontFamilyFuturaC;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background-color: $colorBiege;
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
+
+  @media screen and (max-device-width: 375px) {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
