@@ -56,6 +56,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .call-request {
+    display: none;
+  }
+}
 
 .calculate-cost {
   margin: 0;
@@ -79,6 +84,11 @@
   background-color: #c88b28;
 }
 @media screen and (max-device-width: 768px) {
+  .calculate-cost {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
   .calculate-cost {
     width: 95%;
   }
@@ -108,6 +118,12 @@
   color: #c88b28;
 }
 @media screen and (max-device-width: 768px) {
+  .submit-application {
+    width: 95%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
   .submit-application {
     width: 95%;
     margin-top: 5%;
@@ -230,6 +246,12 @@
   flex-direction: row;
 }
 @media screen and (max-device-width: 768px) {
+  .camera-control__video__button {
+    top: 35%;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
   .camera-control__video__button {
     top: 35%;
     left: 40%;

@@ -27,7 +27,11 @@
   &:active {
     background-color: darken($colorBiege, 20%);
   }
-  @media screen and (max-device-width: $mobileWidth) {
+  @media screen and (max-device-width: $mobileWidth){
+    display: none;
+  }
+
+  @media screen and (max-width: $mobileWidth){
     display: none;
   }
 }
@@ -56,6 +60,9 @@
   @media screen and (max-device-width: $mobileWidth) {
     width: 95%;
   }
+  @media screen and (max-width: $mobileWidth){
+    width: 95%;
+  }
 }
 
 .submit-application {
@@ -82,6 +89,10 @@
     color: darken($colorBiege, 20%);
   }
   @media screen and (max-device-width: $mobileWidth) {
+    width: 95%;
+    margin-top: 5%;
+  }
+  @media screen and (max-width: $mobileWidth){
     width: 95%;
     margin-top: 5%;
   }
@@ -209,7 +220,11 @@
   border: none;
   border-radius: 100%;
   @include flex;
-  @media screen and (max-device-width: $mobileWidth) {
+  @media screen and (max-device-width: $mobileWidth){
+    top: 35%;
+    left: 40%;
+  }
+  @media screen and (max-width: $mobileWidth){
     top: 35%;
     left: 40%;
   }

@@ -62,7 +62,20 @@
     line-height: 14px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-header .company-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .main-header {
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
   .main-header {
     justify-content: space-around;
     padding-top: 5%;
@@ -74,6 +87,11 @@
   width: 33%;
 }
 @media screen and (max-device-width: 768px) {
+  .main-navigator {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .main-navigator {
     display: none;
   }
@@ -117,7 +135,18 @@
     color: white;
   }
 }
+@media screen and (max-width: 768px) {
+  .contact-number {
+    color: white;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .contact-number {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
   .contact-number {
     font-size: 12px;
     line-height: 14px;
@@ -227,6 +256,11 @@
     color: white;
   }
 }
+@media screen and (max-width: 768px) {
+  .repair-types__heading.design-projects__heading h3 {
+    color: white;
+  }
+}
 .repair-types__heading.design-projects__heading p {
   margin: 0;
   padding: 0;
@@ -239,6 +273,11 @@
   max-width: 763px;
 }
 @media screen and (max-device-width: 768px) {
+  .repair-types__heading.design-projects__heading p {
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
   .repair-types__heading.design-projects__heading p {
     color: white;
   }
@@ -310,6 +349,11 @@ body {
     background-color: #252525;
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #252525;
+  }
+}
 
 .center-content {
   width: 100%;
@@ -317,6 +361,11 @@ body {
   margin: 0 auto;
 }
 @media screen and (max-device-width: 768px) {
+  .center-content {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
   .center-content {
     max-width: 768px;
   }
@@ -380,6 +429,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .call-request {
+    display: none;
+  }
+}
 
 .calculate-cost {
   margin: 0;
@@ -403,6 +457,11 @@ body {
   background-color: #c88b28;
 }
 @media screen and (max-device-width: 768px) {
+  .calculate-cost {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
   .calculate-cost {
     width: 95%;
   }
@@ -432,6 +491,12 @@ body {
   color: #c88b28;
 }
 @media screen and (max-device-width: 768px) {
+  .submit-application {
+    width: 95%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
   .submit-application {
     width: 95%;
     margin-top: 5%;
@@ -554,6 +619,12 @@ body {
   flex-direction: row;
 }
 @media screen and (max-device-width: 768px) {
+  .camera-control__video__button {
+    top: 35%;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
   .camera-control__video__button {
     top: 35%;
     left: 40%;
@@ -733,6 +804,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-offer__links-bar {
+    display: none;
+  }
+}
 
 .main-offer__content {
   background-image: url("../assets/img/cover-main.png"), url("../assets/img/background-main.png");
@@ -742,6 +818,14 @@ body {
   padding-left: 4%;
 }
 @media screen and (max-device-width: 768px) {
+  .main-offer__content {
+    width: 100%;
+    background-image: url("../assets/img/cover-main.png"), url("../assets/img/mobile/background-top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 768px) {
   .main-offer__content {
     width: 100%;
     background-image: url("../assets/img/cover-main.png"), url("../assets/img/mobile/background-top.jpg");
@@ -766,6 +850,12 @@ body {
     width: 90%;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-offer__content h1 {
+    font-size: 23px;
+    width: 90%;
+  }
+}
 .main-offer__content h1 bold {
   color: #E3B873;
 }
@@ -780,6 +870,12 @@ body {
   max-width: 390px;
 }
 @media screen and (max-device-width: 768px) {
+  .main-offer__content p {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
   .main-offer__content p {
     font-size: 18px;
     width: 90%;
@@ -811,6 +907,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .scroll-down {
+    display: none;
+  }
+}
 
 .completed-projects {
   background-color: #131313;
@@ -831,11 +932,29 @@ body {
     background-color: #252525;
   }
 }
+@media screen and (max-width: 768px) {
+  .completed-projects {
+    margin: 0;
+    padding: 0;
+    padding: 5%;
+    background-color: #252525;
+  }
+}
 
 .completed-projects__description {
   max-width: 410px;
 }
 @media screen and (max-device-width: 768px) {
+  .completed-projects__description {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
   .completed-projects__description {
     width: 100%;
     display: flex;
@@ -865,6 +984,14 @@ body {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .completed-projects__description h2 {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
 .completed-projects__description h2::after {
   content: "";
   position: absolute;
@@ -879,6 +1006,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .completed-projects__description h2::after {
+    display: none;
+  }
+}
 .completed-projects__description p {
   margin: 0;
   padding: 0;
@@ -889,6 +1021,13 @@ body {
   padding-top: 7.6%;
 }
 @media screen and (max-device-width: 768px) {
+  .completed-projects__description p {
+    font-size: 13.5px;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+}
+@media screen and (max-width: 768px) {
   .completed-projects__description p {
     font-size: 13.5px;
     text-align: center;
@@ -937,6 +1076,11 @@ body {
   margin-top: 10%;
 }
 @media screen and (max-device-width: 768px) {
+  .completed-projects__description__navigation {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .completed-projects__description__navigation {
     display: none;
   }
@@ -990,6 +1134,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .completed-projects__photos {
+    display: none;
+  }
+}
 
 .completed-projects__photos__images {
   position: relative;
@@ -1017,6 +1166,12 @@ body {
     position: relative;
   }
 }
+@media screen and (max-width: 768px) {
+  .completed-projects__mobile {
+    display: block;
+    position: relative;
+  }
+}
 
 .camera-control {
   display: flex;
@@ -1026,6 +1181,12 @@ body {
   background: -webkit-linear-gradient(top, #131313, #131313 40%, white 40%, white);
 }
 @media screen and (max-device-width: 768px) {
+  .camera-control {
+    margin: 5% 5% 0;
+    background-color: #252525;
+  }
+}
+@media screen and (max-width: 768px) {
   .camera-control {
     margin: 5% 5% 0;
     background-color: #252525;
@@ -1050,7 +1211,20 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .camera-control p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .camera-control {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .camera-control {
     background-image: none;
   }
@@ -1063,6 +1237,11 @@ body {
   position: relative;
 }
 @media screen and (max-device-width: 768px) {
+  .camera-control__video {
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
   .camera-control__video {
     margin-top: 15%;
   }
@@ -1095,7 +1274,24 @@ body {
     color: white;
   }
 }
+@media screen and (max-width: 768px) {
+  .camera-control__form p {
+    color: white;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .camera-control__form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 95%;
+  }
+  .camera-control__form input {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
   .camera-control__form {
     display: flex;
     justify-content: flex-start;
@@ -1113,11 +1309,21 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .video-full {
+    display: none;
+  }
+}
 
 .video-mobile {
   display: none;
 }
 @media screen and (max-device-width: 768px) {
+  .video-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
   .video-mobile {
     display: block;
   }
@@ -1138,6 +1344,18 @@ body {
   position: relative;
 }
 @media screen and (max-device-width: 768px) {
+  .repair-types {
+    margin: 0;
+    padding: 0;
+    padding-top: 25%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
   .repair-types {
     margin: 0;
     padding: 0;
@@ -1172,6 +1390,11 @@ body {
     margin-bottom: 50%;
   }
 }
+@media screen and (max-width: 768px) {
+  .repair-types__type {
+    margin-bottom: 50%;
+  }
+}
 .repair-types__type img {
   max-width: 100%;
 }
@@ -1194,6 +1417,12 @@ body {
   color: #363636;
 }
 @media screen and (max-device-width: 768px) {
+  .repair-types__type__description {
+    left: 0;
+    top: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
   .repair-types__type__description {
     left: 0;
     top: 65%;
@@ -1235,6 +1464,11 @@ body {
   background-color: white;
 }
 @media screen and (max-device-width: 768px) {
+  .working-process {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .working-process {
     display: none;
   }
@@ -1332,11 +1566,21 @@ body {
     background-image: -webkit-linear-gradient(top, white, white 60%, #252525 60%, #252525);
   }
 }
+@media screen and (max-width: 768px) {
+  .different-styles {
+    background-image: -webkit-linear-gradient(top, white, white 60%, #252525 60%, #252525);
+  }
+}
 
 .different-styles__list {
   margin-right: 2%;
 }
 @media screen and (max-device-width: 768px) {
+  .different-styles__list {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
   .different-styles__list {
     margin-right: 0;
   }
@@ -1358,6 +1602,12 @@ body {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .different-styles__list h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+}
 .different-styles__list ul {
   margin: 0;
   padding: 0;
@@ -1368,6 +1618,11 @@ body {
   line-height: 34px;
 }
 @media screen and (max-device-width: 768px) {
+  .different-styles__list ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .different-styles__list ul {
     display: none;
   }
@@ -1397,6 +1652,11 @@ body {
   max-width: 100%;
 }
 @media screen and (max-device-width: 768px) {
+  .different-styles__gallery {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .different-styles__gallery {
     display: none;
   }
@@ -1441,7 +1701,17 @@ body {
     margin-top: 150px;
   }
 }
+@media screen and (max-width: 768px) {
+  .working-description {
+    margin-top: 150px;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .working-description {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .working-description {
     display: none;
   }
@@ -1588,6 +1858,13 @@ body {
     padding-top: 20%;
   }
 }
+@media screen and (max-width: 768px) {
+  .team-info {
+    background-color: #252525;
+    background-image: none;
+    padding-top: 20%;
+  }
+}
 
 .team-info__heading {
   width: 100%;
@@ -1631,6 +1908,11 @@ body {
   margin: 6%;
 }
 @media screen and (max-device-width: 768px) {
+  .team-info__members__profile {
+    margin: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
   .team-info__members__profile {
     margin: 15%;
   }
@@ -1703,6 +1985,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .team-info__description {
+    display: none;
+  }
+}
 .team-info__description::before {
   position: absolute;
   content: "";
@@ -1727,6 +2014,11 @@ body {
   background-color: white;
 }
 @media screen and (max-device-width: 768px) {
+  .our-clients {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .our-clients {
     display: none;
   }
@@ -1765,6 +2057,11 @@ body {
   text-align: center;
 }
 @media screen and (max-device-width: 900px) {
+  .our-clients__info header {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 900px) {
   .our-clients__info header {
     flex-wrap: wrap;
   }
@@ -1827,11 +2124,24 @@ body {
     padding: 2%;
   }
 }
+@media screen and (max-width: 768px) {
+  .questions {
+    background-color: #252525;
+    background-image: none;
+    padding: 2%;
+  }
+}
 
 .questions__form {
   background-color: #181818;
 }
 @media screen and (max-device-width: 768px) {
+  .questions__form {
+    background-color: #252525;
+    background-image: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .questions__form {
     background-color: #252525;
     background-image: none;
@@ -1855,6 +2165,14 @@ body {
   align-items: center;
 }
 @media screen and (max-device-width: 768px) {
+  .our-location {
+    width: 100%;
+  }
+  .our-location img[alt=location] {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
   .our-location {
     width: 100%;
   }
@@ -1917,6 +2235,11 @@ img[alt=location] {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-header:last-child {
+    display: none;
+  }
+}
 
 img[alt=location] {
   margin-bottom: 5%;
@@ -1968,7 +2291,19 @@ img[alt=location] {
     background-image: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .repair-types.design-projects {
+    padding: 10% 5%;
+    background-color: #252525;
+    background-image: none;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .repair-types.design-projects .repair-types__type:nth-child(3) {
+    margin-bottom: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
   .repair-types.design-projects .repair-types__type:nth-child(3) {
     margin-bottom: 60%;
   }
@@ -1983,6 +2318,11 @@ img[alt=location] {
   bottom: -20px;
 }
 @media screen and (max-device-width: 1367px) {
+  .repair-types__type.design-projects__type {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
   .repair-types__type.design-projects__type {
     margin-bottom: 200px;
   }
@@ -2062,6 +2402,13 @@ img[alt=location] {
     width: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .camera-control__form input {
+    color: white;
+    border-color: white;
+    width: 100%;
+  }
+}
 
 #camera-control__form__name:focus + label::before,
 #camera-control__form__phone:focus + label::before {
@@ -2077,6 +2424,14 @@ img[alt=location] {
   margin-right: 50px;
 }
 @media screen and (max-device-width: 768px) {
+  .form-wrapper {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
   .form-wrapper {
     margin: 0;
     padding: 0;
@@ -2102,6 +2457,14 @@ label[for=camera-control__form__name] {
     left: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  label[for=camera-control__form__name] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: 20px;
+    left: 0;
+  }
+}
 label[for=camera-control__form__name]::before {
   position: absolute;
   content: "What is your name:";
@@ -2118,6 +2481,11 @@ label[for=camera-control__form__name]::before {
     color: white;
   }
 }
+@media screen and (max-width: 768px) {
+  label[for=camera-control__form__name]::before {
+    color: white;
+  }
+}
 
 label[for=camera-control__form__phone] {
   position: absolute;
@@ -2129,6 +2497,14 @@ label[for=camera-control__form__phone] {
   color: rgba(54, 54, 54, 0.5);
 }
 @media screen and (max-device-width: 768px) {
+  label[for=camera-control__form__phone] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: 20px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
   label[for=camera-control__form__phone] {
     color: rgba(255, 255, 255, 0.5);
     font-size: 15px;
@@ -2152,6 +2528,11 @@ label[for=camera-control__form__phone]::before {
     color: white;
   }
 }
+@media screen and (max-width: 768px) {
+  label[for=camera-control__form__phone]::before {
+    color: white;
+  }
+}
 
 .personal-check {
   margin-top: 2%;
@@ -2161,6 +2542,12 @@ label[for=camera-control__form__phone]::before {
   color: #181818;
 }
 @media screen and (max-device-width: 768px) {
+  .personal-check {
+    margin-top: 10%;
+    order: 1;
+  }
+}
+@media screen and (max-width: 768px) {
   .personal-check {
     margin-top: 10%;
     order: 1;
@@ -2183,12 +2570,28 @@ label[for=camera-control__form__phone]::before {
     z-index: 1;
   }
 }
+@media screen and (max-width: 768px) {
+  .camera-control__form__submit {
+    margin-top: 10%;
+    width: 100%;
+    order: 2;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+  }
+}
 
 label[for=personal-check__input] {
   position: relative;
   margin-left: 24px;
 }
 @media screen and (max-device-width: 768px) {
+  label[for=personal-check__input] {
+    color: white;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
   label[for=personal-check__input] {
     color: white;
     font-size: 16px;
@@ -2348,6 +2751,11 @@ label[for=personal-check__input-2], label[for=personal-check__input-3] {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 768px) {
+  label[for=personal-check__input-2], label[for=personal-check__input-3] {
+    font-size: 16px;
+  }
+}
 label[for=personal-check__input-2]::before, label[for=personal-check__input-3]::before {
   position: absolute;
   content: "";
@@ -2381,6 +2789,11 @@ label[for=personal-check__input-2]::before, label[for=personal-check__input-3]::
     padding: 5%;
   }
 }
+@media screen and (max-width: 768px) {
+  .questions__form {
+    padding: 5%;
+  }
+}
 .questions__form input[type=text] {
   margin: 0;
   padding: 0;
@@ -2402,6 +2815,13 @@ label[for=personal-check__input-2]::before, label[for=personal-check__input-3]::
 }
 
 @media screen and (max-device-width: 768px) {
+  #questions__form__name,
+#questions__form__phone,
+#questions__form__question {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
   #questions__form__name,
 #questions__form__phone,
 #questions__form__question {

@@ -62,7 +62,20 @@
     line-height: 14px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-header .company-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .main-header {
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
   .main-header {
     justify-content: space-around;
     padding-top: 5%;
@@ -74,6 +87,11 @@
   width: 33%;
 }
 @media screen and (max-device-width: 768px) {
+  .main-navigator {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .main-navigator {
     display: none;
   }
@@ -117,7 +135,18 @@
     color: white;
   }
 }
+@media screen and (max-width: 768px) {
+  .contact-number {
+    color: white;
+  }
+}
 @media screen and (max-device-width: 768px) {
+  .contact-number {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
   .contact-number {
     font-size: 12px;
     line-height: 14px;
@@ -227,6 +256,11 @@
     color: white;
   }
 }
+@media screen and (max-width: 768px) {
+  .repair-types__heading.design-projects__heading h3 {
+    color: white;
+  }
+}
 .repair-types__heading.design-projects__heading p {
   margin: 0;
   padding: 0;
@@ -239,6 +273,11 @@
   max-width: 763px;
 }
 @media screen and (max-device-width: 768px) {
+  .repair-types__heading.design-projects__heading p {
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
   .repair-types__heading.design-projects__heading p {
     color: white;
   }
