@@ -1,0 +1,519 @@
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../assets/fonts/futurademic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../assets/fonts/futurademic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../assets/fonts/yesevaone.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../assets/fonts/futuramediumc.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.camera-control__submit {
+  max-width: 770px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.camera-control__form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.camera-control__form input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  width: 231px;
+  height: 32px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  background-color: transparent;
+  position: relative;
+}
+@media screen and (max-device-width: 768px) {
+  .camera-control__form input {
+    color: white;
+    border-color: white;
+    width: 100%;
+  }
+}
+
+#camera-control__form__name:focus + label::before,
+#camera-control__form__phone:focus + label::before {
+  opacity: 0;
+}
+#camera-control__form__name:valid + label::before,
+#camera-control__form__phone:valid + label::before {
+  opacity: 0;
+}
+
+.form-wrapper {
+  position: relative;
+  margin-right: 50px;
+}
+@media screen and (max-device-width: 768px) {
+  .form-wrapper {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+label[for=camera-control__form__name] {
+  position: absolute;
+  right: 180px;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+@media screen and (max-device-width: 768px) {
+  label[for=camera-control__form__name] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: 20px;
+    left: 0;
+  }
+}
+label[for=camera-control__form__name]::before {
+  position: absolute;
+  content: "What is your name:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  left: 0;
+  top: 20px;
+  width: 160px;
+}
+@media screen and (max-device-width: 768px) {
+  label[for=camera-control__form__name]::before {
+    color: white;
+  }
+}
+
+label[for=camera-control__form__phone] {
+  position: absolute;
+  right: 160px;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+@media screen and (max-device-width: 768px) {
+  label[for=camera-control__form__phone] {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: 20px;
+    left: 0;
+  }
+}
+label[for=camera-control__form__phone]::before {
+  position: absolute;
+  content: "Your phone number:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  left: 0;
+  top: 20px;
+  width: 160px;
+}
+@media screen and (max-device-width: 768px) {
+  label[for=camera-control__form__phone]::before {
+    color: white;
+  }
+}
+
+.personal-check {
+  margin-top: 2%;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+}
+@media screen and (max-device-width: 768px) {
+  .personal-check {
+    margin-top: 10%;
+    order: 1;
+  }
+}
+
+.camera-control__form__submit {
+  padding: 15px 75px;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 15px;
+  border-radius: 2px;
+}
+@media screen and (max-device-width: 768px) {
+  .camera-control__form__submit {
+    margin-top: 10%;
+    width: 100%;
+    order: 2;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+  }
+}
+
+label[for=personal-check__input] {
+  position: relative;
+  margin-left: 24px;
+}
+@media screen and (max-device-width: 768px) {
+  label[for=personal-check__input] {
+    color: white;
+    font-size: 16px;
+  }
+}
+label[for=personal-check__input]::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  left: -22px;
+}
+
+#personal-check__input {
+  display: none;
+}
+#personal-check__input:checked + label::before {
+  background-color: #E3B873;
+  background-image: url("../assets/img/OK.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.working-process__form {
+  width: 100%;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  background-color: #131313;
+  padding: 28px 50px;
+  box-sizing: border-box;
+}
+.working-process__form h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  max-width: 297px;
+  align-self: center;
+}
+
+.personal-data-process {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.personal-data-process .personal-check {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.personal-data-process input[type=text] {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  width: 231px;
+  height: 32px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  margin-top: 15%;
+}
+.personal-data-process .form-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+label[for=working-process__form__name] {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+label[for=working-process__form__name]::before {
+  position: absolute;
+  content: "What is your name:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  left: 0;
+  top: 20px;
+  width: 160px;
+}
+
+label[for=working-process__form__phone] {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+label[for=working-process__form__phone]::before {
+  position: absolute;
+  content: "Your phone number:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  left: 0;
+  top: 20px;
+  width: 160px;
+}
+
+label[for=working-process__form__email] {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+label[for=working-process__form__email]::before {
+  position: absolute;
+  content: "Your email:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  left: -35px;
+  top: 20px;
+  width: 160px;
+}
+
+label[for=personal-check__input-2], label[for=personal-check__input-3] {
+  position: relative;
+  margin-left: 24px;
+  color: white;
+}
+@media screen and (max-device-width: 768px) {
+  label[for=personal-check__input-2], label[for=personal-check__input-3] {
+    font-size: 16px;
+  }
+}
+label[for=personal-check__input-2]::before, label[for=personal-check__input-3]::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  left: -22px;
+}
+
+#personal-check__input-2, #personal-check__input-3 {
+  display: none;
+}
+#personal-check__input-2:checked + label::before, #personal-check__input-3:checked + label::before {
+  background-color: #E3B873;
+  background-image: url("../assets/img/OK.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.questions__form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2% 10%;
+}
+@media screen and (max-device-width: 768px) {
+  .questions__form {
+    padding: 5%;
+  }
+}
+.questions__form input[type=text] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  width: 231px;
+  height: 32px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  position: relative;
+  background-color: transparent;
+  margin-top: 15%;
+}
+
+#questions__form__question {
+  width: 100%;
+}
+
+@media screen and (max-device-width: 768px) {
+  #questions__form__name,
+#questions__form__phone,
+#questions__form__question {
+    width: 100%;
+  }
+}
+#questions__form__name:focus + label::before,
+#questions__form__phone:focus + label::before,
+#questions__form__question:focus + label::before {
+  opacity: 0;
+}
+#questions__form__name:valid + label::before,
+#questions__form__phone:valid + label::before,
+#questions__form__question:valid + label::before {
+  opacity: 0;
+}
+
+label[for=questions__form__name] {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+label[for=questions__form__name]::before {
+  position: absolute;
+  content: "Name:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  left: 0;
+  top: 20px;
+  width: 160px;
+}
+
+label[for=questions__form__phone] {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+label[for=questions__form__phone]::before {
+  position: absolute;
+  content: "Phone:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  left: 0;
+  top: 20px;
+  width: 160px;
+}
+
+label[for=questions__form__question] {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+label[for=questions__form__question]::before {
+  position: absolute;
+  content: "Question:";
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  left: 0;
+  top: 20px;
+  width: 160px;
+}
+
+.question-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.question-wrapper div:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.question-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.form-elements {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=forms.css.map */

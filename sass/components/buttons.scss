@@ -27,7 +27,7 @@
   &:active {
     background-color: darken($colorBiege, 20%);
   }
-  @media screen and (max-device-width: 375px) {
+  @media screen and (max-device-width: $mobileWidth) {
     display: none;
   }
 }
@@ -53,7 +53,7 @@
   &:active {
     background-color: darken($colorBiege, 20%);
   }
-  @media screen and (max-device-width: 375px) {
+  @media screen and (max-device-width: $mobileWidth) {
     width: 95%;
   }
 }
@@ -81,7 +81,7 @@
     border-color: darken($colorBiege, 20%);
     color: darken($colorBiege, 20%);
   }
-  @media screen and (max-device-width: 375px) {
+  @media screen and (max-device-width: $mobileWidth) {
     width: 95%;
     margin-top: 5%;
   }
@@ -107,32 +107,96 @@
 }
 
 .swipe-left {
+  border: none;
   position: absolute;
   right: 0;
   top: 50%;
+  background-color: $colorBiege;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  @include flex;
+
+  & img {
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
 }
 
 .swipe-left__mobile {
+  border: none;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 5%;
   width: 36px;
   height: 36px;
   background-color: $colorBiege;
   border: none;
   border-radius: 100%;
   transform: rotate(180deg);
+  background-image: url("../assets/img/Vector(Stroke).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
 }
 
 .swipe-right__mobile {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 5%;
   width: 36px;
   height: 36px;
   background-color: $colorBiege;
   border: none;
   border-radius: 100%;
+  @include zeroPaddings;
+  background-image: url("../assets/img/Vector(Stroke).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
+}
+
+.completed-projects__photos__navigation {
+  & button {
+    border: none;
+    background-color: transparent;
+    font-family: $yesevaOne;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+
+    &:hover {
+      color: $colorBiege;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: darken($colorBiege, 20%);
+      text-decoration: underline;
+    }
+  }
 }
 
 .camera-control__video__button {
@@ -144,6 +208,23 @@
   background-color: $colorBiege;
   border: none;
   border-radius: 100%;
+  @include flex;
+  @media screen and (max-device-width: $mobileWidth) {
+    top: 35%;
+    left: 40%;
+  }
+
+  & img {
+    margin: auto auto auto 30px;
+  }
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
 }
 
 .camera-control__form__submit {
@@ -163,9 +244,88 @@
   &:active {
     background-color: darken($colorBiege, 20%);
   }
+}
 
-  @media screen and (max-device-width: 375px) {
-    margin-top: 5%;
-    width: 100%;
+.arrow-left {
+  @include zeroPaddings;
+  background-color: $themeDark;
+  border: none;
+  padding: 2%;
+
+  &:hover {
+    background-color: gba(255,255,255,0.5);
+    border-radius: 25%;
+  }
+
+  &:active {
+    background-color: gba(255,255,255,0.5);
+    border-radius: 25%;
+  }
+}
+
+.arrow-right {
+  @include zeroPaddings;
+  background-color: $themeDark;
+  border: none;
+  padding: 2%;
+
+  & img {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: gba(255,255,255,0.5);
+    border-radius: 25%;
+  }
+
+  &:active {
+    background-color: gba(255,255,255,0.5);
+    border-radius: 25%;
+  }
+}
+
+.questions__form__submit,
+.working-process__form__submit {
+  font-family: $fontFamilyFuturaC;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  align-self: flex-end;
+  background-color: $colorBiege;
+  padding: 19px 22px;
+  margin-top: 10%;
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
+  }
+}
+
+.questions__form__submit {
+  font-family: $fontFamilyFuturaC;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  align-self: flex-end;
+  background-color: $colorBiege;
+  padding: 20px 65px;
+  margin-top: 10%;
+  align-self: center;
+
+  &:hover {
+    background-color: darken($colorBiege, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorBiege, 20%);
   }
 }

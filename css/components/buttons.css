@@ -51,7 +51,7 @@
 .call-request:active {
   background-color: #c88b28;
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .call-request {
     display: none;
   }
@@ -78,7 +78,7 @@
 .calculate-cost:active {
   background-color: #c88b28;
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .calculate-cost {
     width: 95%;
   }
@@ -107,7 +107,7 @@
   border-color: #c88b28;
   color: #c88b28;
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .submit-application {
     width: 95%;
     margin-top: 5%;
@@ -132,32 +132,88 @@
 }
 
 .swipe-left {
+  border: none;
   position: absolute;
   right: 0;
   top: 50%;
+  background-color: #E3B873;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.swipe-left img {
+  margin: auto;
+}
+.swipe-left:hover {
+  background-color: #dba249;
+}
+.swipe-left:active {
+  background-color: #c88b28;
 }
 
 .swipe-left__mobile {
+  border: none;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 5%;
   width: 36px;
   height: 36px;
   background-color: #E3B873;
   border: none;
   border-radius: 100%;
   transform: rotate(180deg);
+  background-image: url("../assets/img/Vector(Stroke).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.swipe-left__mobile:hover {
+  background-color: #dba249;
+}
+.swipe-left__mobile:active {
+  background-color: #c88b28;
 }
 
 .swipe-right__mobile {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 5%;
   width: 36px;
   height: 36px;
   background-color: #E3B873;
   border: none;
   border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/img/Vector(Stroke).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.swipe-right__mobile:hover {
+  background-color: #dba249;
+}
+.swipe-right__mobile:active {
+  background-color: #c88b28;
+}
+
+.completed-projects__photos__navigation button {
+  border: none;
+  background-color: transparent;
+  font-family: "Yeseva One", serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+.completed-projects__photos__navigation button:hover {
+  color: #E3B873;
+  text-decoration: underline;
+}
+.completed-projects__photos__navigation button:active {
+  color: #c88b28;
+  text-decoration: underline;
 }
 
 .camera-control__video__button {
@@ -169,6 +225,24 @@
   background-color: #E3B873;
   border: none;
   border-radius: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+@media screen and (max-device-width: 768px) {
+  .camera-control__video__button {
+    top: 35%;
+    left: 40%;
+  }
+}
+.camera-control__video__button img {
+  margin: auto auto auto 30px;
+}
+.camera-control__video__button:hover {
+  background-color: #dba249;
+}
+.camera-control__video__button:active {
+  background-color: #c88b28;
 }
 
 .camera-control__form__submit {
@@ -187,11 +261,84 @@
 .camera-control__form__submit:active {
   background-color: #c88b28;
 }
-@media screen and (max-device-width: 375px) {
-  .camera-control__form__submit {
-    margin-top: 5%;
-    width: 100%;
-  }
+
+.arrow-left {
+  margin: 0;
+  padding: 0;
+  background-color: #131313;
+  border: none;
+  padding: 2%;
+}
+.arrow-left:hover {
+  background-color: gba(255, 255, 255, 0.5);
+  border-radius: 25%;
+}
+.arrow-left:active {
+  background-color: gba(255, 255, 255, 0.5);
+  border-radius: 25%;
+}
+
+.arrow-right {
+  margin: 0;
+  padding: 0;
+  background-color: #131313;
+  border: none;
+  padding: 2%;
+}
+.arrow-right img {
+  transform: rotate(180deg);
+}
+.arrow-right:hover {
+  background-color: gba(255, 255, 255, 0.5);
+  border-radius: 25%;
+}
+.arrow-right:active {
+  background-color: gba(255, 255, 255, 0.5);
+  border-radius: 25%;
+}
+
+.questions__form__submit,
+.working-process__form__submit {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  align-self: flex-end;
+  background-color: #E3B873;
+  padding: 19px 22px;
+  margin-top: 10%;
+}
+.questions__form__submit:hover,
+.working-process__form__submit:hover {
+  background-color: #dba249;
+}
+.questions__form__submit:active,
+.working-process__form__submit:active {
+  background-color: #c88b28;
+}
+
+.questions__form__submit {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  align-self: flex-end;
+  background-color: #E3B873;
+  padding: 20px 65px;
+  margin-top: 10%;
+  align-self: center;
+}
+.questions__form__submit:hover {
+  background-color: #dba249;
+}
+.questions__form__submit:active {
+  background-color: #c88b28;
 }
 
 /*# sourceMappingURL=buttons.css.map */

@@ -3,6 +3,10 @@ $maxWidth: 1438px;
 body {
   padding: 0;
   margin: 0;
+  background-color: #131313;
+  @media screen and (max-device-width: $mobileWidth) {
+    background-color: $mobileBlack;
+  }
 }
 
 .center-content {
@@ -11,7 +15,7 @@ body {
 
   margin: 0 auto;
 
-  @media screen and (max-device-width: 375px) {
-    max-width: 375px;
+  @media screen and (max-device-width: $mobileWidth) {
+    max-width: $mobileWidth;
   }
 }

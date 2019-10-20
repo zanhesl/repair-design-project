@@ -56,13 +56,13 @@
 .main-header .company-name:active {
   color: #c88b28;
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .main-header .company-name {
     font-size: 12px;
     line-height: 14px;
   }
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .main-header {
     justify-content: space-around;
     padding-top: 5%;
@@ -73,7 +73,7 @@
 .main-navigator {
   width: 33%;
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .main-navigator {
     display: none;
   }
@@ -112,16 +112,192 @@
   color: #E3B873;
   text-decoration: none;
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .contact-number {
     color: white;
   }
 }
-@media screen and (max-device-width: 375px) {
+@media screen and (max-device-width: 768px) {
   .contact-number {
     font-size: 12px;
     line-height: 14px;
   }
+}
+.contact-number:hover {
+  color: #dba249;
+}
+.contact-number:active {
+  color: #c88b28;
+}
+
+.camera-control__heading {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.camera-control__heading h3 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10%;
+  position: relative;
+}
+.camera-control__heading h3::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+  top: 60px;
+  left: 35px;
+}
+.camera-control__heading h3::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+  top: 60px;
+  right: 35px;
+}
+.camera-control__heading img {
+  margin-bottom: 10%;
+}
+
+.repair-types__heading {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.repair-types__heading h3 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  margin-bottom: 10%;
+  position: relative;
+}
+.repair-types__heading h3::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+  top: 40px;
+  left: 35px;
+}
+.repair-types__heading h3::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: #E3B873;
+  top: 40px;
+  right: 35px;
+}
+.repair-types__heading img {
+  margin-bottom: 5%;
+}
+
+.repair-types__heading.design-projects__heading img {
+  margin-bottom: 0;
+}
+@media screen and (max-device-width: 768px) {
+  .repair-types__heading.design-projects__heading h3 {
+    color: white;
+  }
+}
+.repair-types__heading.design-projects__heading p {
+  margin: 0;
+  padding: 0;
+  margin: 2% 0;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+  max-width: 763px;
+}
+@media screen and (max-device-width: 768px) {
+  .repair-types__heading.design-projects__heading p {
+    color: white;
+  }
+}
+
+.team-info__heading {
+  margin-top: 6%;
+}
+.team-info__heading img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.team-info__heading h3::before {
+  top: 60px;
+  left: 3px;
+}
+.team-info__heading h3::after {
+  top: 60px;
+  right: 3px;
+}
+
+.our-clients__heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.our-clients__heading h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+.our-clients__heading p {
+  margin: 0;
+  padding: 0;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #181818;
+}
+
+.our-clients__heading.repair-types__heading img {
+  margin: 15px 0;
+}
+.our-clients__heading.repair-types__heading h3::before {
+  top: 55px;
+  left: 15px;
+}
+.our-clients__heading.repair-types__heading h3::after {
+  top: 55px;
+  right: 15px;
 }
 
 /*# sourceMappingURL=header.css.map */
