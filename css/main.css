@@ -1848,6 +1848,12 @@ body {
   color: white;
 }
 
+.our-location {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (max-device-width: 768px) {
   .our-location {
     width: 100%;
@@ -1869,10 +1875,16 @@ body {
   margin: 5% auto;
 }
 
+img[alt=location] {
+  width: 80%;
+}
+
 .our-location__links {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin-bottom: 2%;
+  width: 100px;
 }
 .our-location__links a {
   background-color: #E3B873;
@@ -1891,8 +1903,7 @@ body {
   background-image: url("../assets/img/mail.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 1%;
-  margin-bottom: 5%;
+  margin-right: 10%;
 }
 
 .our-location__links__instagram {
