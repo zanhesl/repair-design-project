@@ -177,6 +177,7 @@
 
 .completed-projects {
   background-color: #131313;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -440,6 +441,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   background: -webkit-linear-gradient(top, #131313, #131313 40%, white 40%, white);
 }
 @media screen and (max-device-width: 768px) {
@@ -497,6 +499,14 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.camera-control__video video {
+  margin: auto;
 }
 @media screen and (max-device-width: 768px) {
   .camera-control__video {
@@ -741,6 +751,28 @@
   background-repeat: no-repeat;
   width: 50%;
   margin-right: 130px;
+  position: relative;
+}
+
+.round {
+  width: 600px;
+  height: 600px;
+  left: -8%;
+  top: 5%;
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+}
+@media screen and (max-device-width: 900px) {
+  .round {
+    left: -50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .round {
+    left: -50%;
+  }
 }
 
 .working-process__steps__list {
@@ -756,13 +788,17 @@
   min-height: 1000px;
 }
 .working-process__steps__list li {
+  background-color: white;
   position: absolute;
-  padding-left: 50px;
+  padding-left: 60px;
   width: 190%;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  z-index: 2;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .working-process__steps__list li::before {
   position: absolute;
@@ -771,7 +807,7 @@
   height: 42px;
   background-color: #E3B873;
   border-radius: 50%;
-  left: 0;
+  left: 10px;
   font-family: "Yeseva One", serif;
   font-size: 18px;
   line-height: 25px;
@@ -794,6 +830,8 @@
   top: 25%;
   left: 2%;
   max-width: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .working-process__steps__list li:nth-child(2)::before {
   content: "02";
@@ -802,6 +840,8 @@
   top: 40%;
   left: 5%;
   max-width: 125px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .working-process__steps__list li:nth-child(3)::before {
   content: "03";
